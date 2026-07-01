@@ -15,4 +15,9 @@ menu = {
 }
 print( menu )
 
+order = input("please enter the item you would like to order from the menu:")
+quantity = int(input("how manny would you like to order"))
+prise = menu[order]
+sum = prise* quantity
 
+print("Thank you for your order, ", Titel, clinte_name, ". Your total bill is: Rs.", sum)
