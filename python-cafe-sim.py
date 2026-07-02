@@ -25,6 +25,9 @@ else:
     order = input("please enter the item you would like to order from the menu:")
     quantity = int(input("how many would you like to order"))
 
+#adding another item to the order if the client wants to
+order2 = None
+quantity2 = 0
 add_item = input("would you like to add any other item to your order? (yes/no):")
 if add_item == "yes":
     order2 = input("please enter the item you would like to order from the menu:")
@@ -45,6 +48,7 @@ if order2 in menu:
     totalprise = menu[order] + menu[order2]
 else:
     totalprise = menu[order]
+
 sum = totalprise * totalquantity
 
 print("Thank you for your order, ", Titel, clinte_name, ". Your total bill is: Rs.", sum)
