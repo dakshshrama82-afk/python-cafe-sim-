@@ -7,17 +7,28 @@ print(Titel,clinte_name ,"Here is our menu.What would you like to have today?")
 
 
 menu = {
-    "Coffee": 120,
-    "Tea": 80,
-    "Sandwich": 150,
-    "Cake": 200,
-    "Juice": 100,
+    "coffee": 120,
+    "tea": 80,
+    "sandwich": 150,
+    "cake": 200,
+    "juice": 100,
 }
 print( menu )
 
 order = input("please enter the item you would like to order from the menu:")
+if order != menu:
+    print("we do not have that item in our menu. Please choose an item from the menu.")
+
+add_item = input("would you like to add any other item to your order? (yes/no):")
+if add_item== "yes":
+    order2 = input("please enter the item you would like to order from the menu:")
+else:
+    print("Thank you for your order. We will prepare it for you.")
+
+  
+
 quantity = int(input("how manny would you like to order"))
-prise = menu[order]
+prise = menu[order] + menu[order2]
 sum = prise* quantity
 
 print("Thank you for your order, ", Titel, clinte_name, ". Your total bill is: Rs.", sum)
