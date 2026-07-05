@@ -8,3 +8,11 @@ My Python project takes the order, then asks for quantity, then asks if the user
 also calculates the bill and prints the bill.
 <br>
 well i want to add a discount system
+<br>
+Technologies Used
+<br>
+Python basics (input, print, lists, dicts, conditionals)
+<br>
+future Improvements
+<br>
+discount Future
