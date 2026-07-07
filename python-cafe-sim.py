@@ -39,19 +39,16 @@ if add_item == "no":
     print("Thank you for your order. We will prepare it for you.")
 
 #taking the quantity of the order and calculating the total bill
-if quantity2 > 0:
-    totalquantity = quantity + quantity2
-else:
-    totalquantity = quantity
+
 
 if order2 in menu:
-    totalprise = menu[order] + menu[order2]
+    totalprise = menu[order]*quantity + menu[order2]*quantity2
 else:
-    totalprise = menu[order]
+    totalprise = menu[order]*quantity
 
-sum = totalprise * totalquantity
+sum = totalprise
 bill = sum
-if sum >= 500:
+if 500<= sum <1500:
     discount = sum*0.1
     bill = sum - discount
 elif sum >= 1500:
@@ -64,9 +61,20 @@ print("Thank you for your order, ", Titel, clinte_name, ". Your total bill is: R
 #printing the receipt for the order
 
 print("--------cafe receipt--------")
+
 print("Customer Name:", Titel, clinte_name)
-print("Order:", order, "and", order2)
-print("Quantity:", totalquantity)
-print("Total Bill: Rs.", bill)
+
+print(order,"x",quantity,"=rs",menu[order]*quantity)
+if order2 in menu:
+    print(order2,"x",quantity2,"=rs",menu[order2]*quantity2)
+
+print("subtotal:",totalprise)
+
+if 500<= sum <1500:
+    print("discount:10%")
+elif sum >= 1500:
+    print("discount:30%")
+
+print("bill:",bill)
 
 print("We hope you enjoy your meal! Have a great day!")
