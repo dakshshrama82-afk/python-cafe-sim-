@@ -50,8 +50,16 @@ else:
     totalprise = menu[order]
 
 sum = totalprise * totalquantity
+bill = sum
+if sum >= 500:
+    discount = sum*0.1
+    bill = sum - discount
+elif sum >= 1500:
+    discount = sum*0.3
+    bill = sum - discount
 
-print("Thank you for your order, ", Titel, clinte_name, ". Your total bill is: Rs.", sum)
+
+print("Thank you for your order, ", Titel, clinte_name, ". Your total bill is: Rs.", bill)
 
 #printing the receipt for the order
 
@@ -59,6 +67,6 @@ print("--------cafe receipt--------")
 print("Customer Name:", Titel, clinte_name)
 print("Order:", order, "and", order2)
 print("Quantity:", totalquantity)
-print("Total Bill: Rs.", sum)
+print("Total Bill: Rs.", bill)
 
 print("We hope you enjoy your meal! Have a great day!")
