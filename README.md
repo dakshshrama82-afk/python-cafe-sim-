@@ -1,27 +1,33 @@
-python-cafe-sim
+#python-cafe-sim:
 <br>
 A simple Python project simulating a café ordering and billing system.
 <br>
 This is my first project, created to practice input, lists, and basic logic while learning Python.
+<br.
 <br>
-Features
+**Features:**
 <br>
-Take customer orders with quantities.
 <br>
-Add multiple items to the order.
+1.Take customer orders with quantities.
 <br>
-Calculate the total bill.
+2.Add multiple items to the order.
 <br>
-Print a clear receipt.
+3.Calculate the total bill.
 <br>
-Discount system: applies discounts based on bill amount.
+4.Print a clear receipt.
 <br>
-Technologies Used
+5.Discount system: applies discounts based on bill amount.
 <br>
+<br>
+**Technologies Used:**
+<br>
+<br.
 Python basics (input, print, lists, dicts, conditionals).
 <br>
-Future Improvements
+<br.
+**Future Improvements:**
 <br>
-Support multiple customers
 <br>
-Expand discount system with customer types (e.g., student, senior)
+1.Support multiple customers
+<br>
+2.Expand discount system with customer types (e.g., student, senior)
