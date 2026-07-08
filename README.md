@@ -21,10 +21,10 @@ This is my first project, created to practice input, lists, and basic logic whil
 <br>
 **Technologies Used:**
 <br>
-<br.
+<br>
 Python basics (input, print, lists, dicts, conditionals).
 <br>
-<br.
+<br>
 **Future Improvements:**
 <br>
 <br>
